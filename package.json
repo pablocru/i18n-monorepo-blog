@@ -6,5 +6,9 @@
     "packages/websites/*",
     "packages/components/*",
     "packages/layouts/*"
-  ]
+  ],
+  "scripts": {
+    "dev": "pnpm --filter @websites/* run dev",
+    "build": "pnpm --filter @websites/* run build"
+  }
 }

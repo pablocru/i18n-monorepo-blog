@@ -11,8 +11,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.10.0",
     "@astrojs/check": "^0.7.0",
+    "@layouts/base-layout": "workspace:^",
+    "astro": "^4.10.0",
     "typescript": "^5.4.5"
   }
 }

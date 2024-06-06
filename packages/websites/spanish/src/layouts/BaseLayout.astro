@@ -1,0 +1,13 @@
+---
+import BaseLayoutComp from "@layouts/base-layout";
+
+interface Props {
+  pageTitle?: string;
+}
+
+const { pageTitle = "Blog en castellano" } = Astro.props;
+---
+
+<BaseLayoutComp faviconPath="/favicon.svg" pageLang="es" pageTitle={pageTitle}>
+  <slot />
+</BaseLayoutComp>

@@ -36,6 +36,14 @@ To create an Astro component you must use the `component` template:
 npm create astro@latest <component-name> -- --template component
 ```
 
+## Install a local Astro component
+
+I use the following command in the `website` that I want to install an Astro component:
+
+```bash
+npm install "@<folder-name>/<component-name>"
+```
+
 ## Bugs or suggestions
 
 If you found a bug or have a suggestion please don't hesitate to contact me or open an

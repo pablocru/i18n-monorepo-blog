@@ -1,0 +1,18 @@
+---
+import HeadComp from "@components/head";
+
+interface Props {
+  faviconPath: string;
+  pageLang: string;
+  pageTitle: string;
+}
+
+const { faviconPath, pageLang, pageTitle } = Astro.props;
+---
+
+<html lang={pageLang}>
+  <HeadComp faviconPath={faviconPath} pageTitle={pageTitle} />
+  <body>
+    <slot />
+  </body>
+</html>

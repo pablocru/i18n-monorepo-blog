@@ -1,0 +1,27 @@
+{
+  "name": "@layouts/base-layout",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "files": [
+    "src",
+    "index.ts"
+  ],
+  "keywords": [
+    "astro-component"
+  ],
+  "scripts": {},
+  "devDependencies": {
+    "astro": "^4.10.0"
+  },
+  "peerDependencies": {
+    "astro": "^4.0.0"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.7.0",
+    "@components/head": "workspace:^",
+    "typescript": "^5.4.5"
+  }
+}

@@ -3,11 +3,20 @@ import BaseLayoutComp from "@layouts/base-layout";
 
 interface Props {
   pageTitle?: string;
+  seoTitle?: string;
+  seoDescription?: string;
 }
 
-const { pageTitle = "English blog" } = Astro.props;
+const { pageTitle = "English blog", seoDescription, seoTitle } = Astro.props;
 ---
 
-<BaseLayoutComp faviconPath="/favicon.svg" pageLang="en" pageTitle={pageTitle}>
+<BaseLayoutComp
+  faviconPath="/favicon.svg"
+  pageLang="en"
+  pageTitle={pageTitle}
+  seoDescription={seoDescription ? seoDescription : pageTitle}
+  seoTitle={seoTitle ? seoTitle : pageTitle}
+>
   <slot />
 </BaseLayoutComp>
+

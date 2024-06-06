@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
+    "@components/seo-tags": "workspace:^",
     "typescript": "^5.4.5"
   }
 }

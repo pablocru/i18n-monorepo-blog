@@ -1,10 +1,12 @@
 ---
-export interface Props {
+import { SeoTags, type SeoTagsProps } from "@components/seo-tags";
+
+export interface Props extends SeoTagsProps {
   faviconPath: string;
   pageTitle: string;
 }
 
-const { faviconPath, pageTitle } = Astro.props;
+const { faviconPath, pageTitle, seoDescription, seoTitle } = Astro.props;
 ---
 
 <head>
@@ -13,4 +15,5 @@ const { faviconPath, pageTitle } = Astro.props;
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="generator" content={Astro.generator} />
   <title>{pageTitle}</title>
+  <SeoTags seoDescription={seoDescription} seoTitle={seoTitle} />
 </head>

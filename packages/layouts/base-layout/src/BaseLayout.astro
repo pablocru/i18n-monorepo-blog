@@ -6,11 +6,16 @@ interface Props extends HeadProps {
   pageLang: string;
 }
 
-const { faviconPath, pageLang, pageTitle } = Astro.props;
+const { faviconPath, pageLang, pageTitle, seoDescription, seoTitle } = Astro.props;
 ---
 
 <html lang={pageLang}>
-  <HeadComp faviconPath={faviconPath} pageTitle={pageTitle} />
+  <HeadComp
+    faviconPath={faviconPath}
+    pageTitle={pageTitle}
+    seoDescription={seoDescription}
+    seoTitle={seoTitle}
+  />
   <body>
     <slot />
   </body>

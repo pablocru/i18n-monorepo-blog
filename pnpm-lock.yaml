@@ -13,12 +13,28 @@ importers:
       '@astrojs/check':
         specifier: ^0.7.0
         version: 0.7.0(typescript@5.4.5)
+      '@components/seo-tags':
+        specifier: workspace:^
+        version: link:../seo-tags
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
     devDependencies:
       astro:
         specifier: ^4.9.3
+        version: 4.10.0(typescript@5.4.5)
+
+  packages/components/seo-tags:
+    dependencies:
+      '@astrojs/check':
+        specifier: ^0.7.0
+        version: 0.7.0(typescript@5.4.5)
+      typescript:
+        specifier: ^5.4.5
+        version: 5.4.5
+    devDependencies:
+      astro:
+        specifier: ^4.10.0
         version: 4.10.0(typescript@5.4.5)
 
   packages/layouts/base-layout:

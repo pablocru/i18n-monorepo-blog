@@ -1,11 +1,9 @@
 ---
 import "./fonts.css";
-import HeadComp from "@components/head";
+import { Head as HeadComp, type HeadProps } from "@components/head";
 
-interface Props {
-  faviconPath: string;
+interface Props extends HeadProps {
   pageLang: string;
-  pageTitle: string;
 }
 
 const { faviconPath, pageLang, pageTitle } = Astro.props;

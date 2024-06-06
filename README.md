@@ -33,7 +33,11 @@ is a library that must be installed in an Astro project.
 To create an Astro component you must use the `component` template:
 
 ```bash
-npm create astro@latest <component-name> -- --template component
+npm create astro@latest "<component-name>" -- --template component
+```
+
+```bash
+npm create [...] --install --no-git --typescript strict --template component
 ```
 
 ## Install a local Astro component

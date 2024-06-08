@@ -14,8 +14,8 @@ const { pageTitle = "English blog", seoDescription, seoTitle } = Astro.props;
   faviconPath="/favicon.svg"
   pageLang="en"
   pageTitle={pageTitle}
-  seoDescription={seoDescription ? seoDescription : pageTitle}
-  seoTitle={seoTitle ? seoTitle : pageTitle}
+  seoDescription={seoDescription || pageTitle}
+  seoTitle={seoTitle || pageTitle}
 >
   <slot />
 </BaseLayoutComp>

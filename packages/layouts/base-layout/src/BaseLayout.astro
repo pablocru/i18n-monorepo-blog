@@ -1,21 +1,25 @@
 ---
 import "./fonts.css";
-import { Head as HeadComp, type HeadProps } from "@components/head";
+import { SeoTags, type SeoTagsProps } from "@components/seo-tags";
 
-interface Props extends HeadProps {
+interface Props extends SeoTagsProps {
+  faviconPath: string;
   pageLang: string;
+  pageTitle: string;
 }
 
 const { faviconPath, pageLang, pageTitle, seoDescription, seoTitle } = Astro.props;
 ---
 
 <html lang={pageLang}>
-  <HeadComp
-    faviconPath={faviconPath}
-    pageTitle={pageTitle}
-    seoDescription={seoDescription}
-    seoTitle={seoTitle}
-  />
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href={faviconPath} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <SeoTags seoDescription={seoDescription} seoTitle={seoTitle} />
+  </head>
   <body>
     <slot />
   </body>

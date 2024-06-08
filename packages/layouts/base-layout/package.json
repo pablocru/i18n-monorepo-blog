@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
-    "@components/head": "workspace:^",
+    "@components/seo-tags": "workspace:^",
     "@fontsource/ibm-plex-mono": "^5.0.13",
     "@fontsource/ibm-plex-sans": "^5.0.20",
     "@fontsource/ibm-plex-serif": "^5.0.13",

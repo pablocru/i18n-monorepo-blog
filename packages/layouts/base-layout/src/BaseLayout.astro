@@ -14,17 +14,19 @@ const { pageLang, pageTitle, seoDescription, seoTitle } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
     <SeoTags seoDescription={seoDescription} seoTitle={seoTitle} />
 
     {
       /*
-        Any head tag can be added using Astros's Named Slots:
-        https://docs.astro.build/en/basics/astro-components/#named-slots
+      Any head tag can be added using Astros's Named Slots:
+      https://docs.astro.build/en/basics/astro-components/#named-slots
       */
     }
     <slot name="head-expander" />
+
+    {/* Identify Astro and its version as the framework used to generate this site */}
+    <meta name="generator" content={Astro.generator} />
   </head>
   <body>
     <slot />

@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "workspaces": [
-    "packages/websites/*",
     "packages/components/*",
-    "packages/layouts/*"
+    "packages/layouts/*",
+    "packages/websites/*"
   ],
   "scripts": {
     "dev": "pnpm --filter @websites/* run dev",

@@ -1,4 +1,4 @@
 packages:
-  - 'packages/websites/*'
   - 'packages/components/*'
   - 'packages/layouts/*'
+  - 'packages/websites/*'

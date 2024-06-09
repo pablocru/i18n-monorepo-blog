@@ -11,11 +11,13 @@ const { pageTitle = "Blog en castellano", seoDescription, seoTitle } = Astro.pro
 ---
 
 <BaseLayoutComp
-  faviconPath="/favicon.svg"
   pageLang="es"
   pageTitle={pageTitle}
   seoDescription={seoDescription || pageTitle}
   seoTitle={seoTitle || pageTitle}
 >
+  <Fragment slot="head-expander">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </Fragment>
   <slot />
 </BaseLayoutComp>

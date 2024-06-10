@@ -1,0 +1,16 @@
+---
+import { BaseLayout, type BaseLayoutProps } from "@layouts/base-layout";
+import { SeoTags, type SeoTagsProps } from "@components/seo-tags";
+
+export interface Props extends BaseLayoutProps, SeoTagsProps {}
+
+const { pageLang, pageTitle, seoDescription, seoTitle } = Astro.props;
+---
+
+<BaseLayout pageLang={pageLang} pageTitle={pageTitle}>
+  <Fragment slot="head-expander">
+    <SeoTags seoDescription={seoDescription} seoTitle={seoTitle} />
+    <slot name="head-expander" />
+  </Fragment>
+  <slot />
+</BaseLayout>

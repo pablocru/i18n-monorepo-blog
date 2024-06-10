@@ -1,13 +1,12 @@
 ---
 import "./fonts.css";
-import { SeoTags, type SeoTagsProps } from "@components/seo-tags";
 
-export interface Props extends SeoTagsProps {
+export interface Props {
   pageLang: string;
   pageTitle: string;
 }
 
-const { pageLang, pageTitle, seoDescription, seoTitle } = Astro.props;
+const { pageLang, pageTitle } = Astro.props;
 ---
 
 <html lang={pageLang}>
@@ -15,7 +14,6 @@ const { pageLang, pageTitle, seoDescription, seoTitle } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{pageTitle}</title>
-    <SeoTags seoDescription={seoDescription} seoTitle={seoTitle} />
 
     {
       /*

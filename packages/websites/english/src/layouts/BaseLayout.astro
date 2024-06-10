@@ -1,5 +1,5 @@
 ---
-import { BaseLayout as BaseLayoutComp } from "@layouts/base-layout";
+import { SeoLayout } from "@layouts/seo-layout";
 
 interface Props {
   pageTitle?: string;
@@ -10,7 +10,7 @@ interface Props {
 const { pageTitle = "English blog", seoDescription, seoTitle } = Astro.props;
 ---
 
-<BaseLayoutComp
+<SeoLayout
   pageLang="en"
   pageTitle={pageTitle}
   seoDescription={seoDescription || pageTitle}
@@ -20,4 +20,4 @@ const { pageTitle = "English blog", seoDescription, seoTitle } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </Fragment>
   <slot />
-</BaseLayoutComp>
+</SeoLayout>

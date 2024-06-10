@@ -1,5 +1,5 @@
 {
-  "name": "@layouts/base-layout",
+  "name": "@layouts/seo-layout",
   "version": "0.0.1",
   "type": "module",
   "exports": {
@@ -14,16 +14,15 @@
   ],
   "scripts": {},
   "devDependencies": {
-    "astro": "^4.10.0"
+    "astro": "^4.10.1"
   },
   "peerDependencies": {
     "astro": "^4.0.0"
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
-    "@fontsource/ibm-plex-mono": "^5.0.13",
-    "@fontsource/ibm-plex-sans": "^5.0.20",
-    "@fontsource/ibm-plex-serif": "^5.0.13",
+    "@components/seo-tags": "workspace:^",
+    "@layouts/base-layout": "workspace:^",
     "typescript": "^5.4.5"
   }
 }

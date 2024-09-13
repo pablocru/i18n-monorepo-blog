@@ -8,12 +8,16 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "eslint"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
     "@layouts/seo-layout": "workspace:^",
     "astro": "^4.15.4",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@config/linter": "workspace:^"
   }
 }

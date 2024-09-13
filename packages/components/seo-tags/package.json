@@ -12,8 +12,11 @@
   "keywords": [
     "astro-component"
   ],
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint"
+  },
   "devDependencies": {
+    "@config/linter": "workspace:^",
     "astro": "^4.15.4"
   },
   "peerDependencies": {

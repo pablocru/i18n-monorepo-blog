@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@config/linter": "workspace:^",
-    "astro": "^4.15.4"
+    "astro": "^5.15.9"
   },
   "peerDependencies": {
     "astro": "^4.0.0"
